@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades de color</title>
+  <style>
+    .grupo{
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+
+    #c1{
+      background-color: blueviolet; /* Por nombres */
+    }
+
+    #c2{
+      background-color: #aa66ff; /* División hexadecimal de los pares: primeros es rojo, segundos es verde y el último es azul. */
+      /* Paleta de colores hexadecimales: http://html-color-codes.info/codigos-de-colores-hexadecimales/ */
+    }
+
+    #c3{
+      background-color: rgba(180, 0, 70, 0.5); /* Del 0 al 255 para indicar color. Alpha: es la transparencia.*/
+    }
+  </style>
+</head>
+<body>
+  <div id="c1" class="grupo"></div>
+  <div id="c2" class="grupo"></div>
+  <div id="c3" class="grupo"></div>
+</body>
+</html>

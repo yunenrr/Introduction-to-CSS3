@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades de ubicación</title>
+  <style>
+    *{
+      /* Selector universal */
+      /* Formatea valores a todas las etiquetas */
+      /* Recomendación formatear margin y padding */
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    header{
+      position: relative; /* Posición relativa, usado para cajas principales. */
+      /*
+      Cuando se trabaja con posición relativa, los margenes trabajan con dos coordenadas principales
+      que son: top and left.
+      */
+      /* Margin horizontal auto: Junto con posición relativa va a mostrar las cajas en el centro de la pantalla. */
+      margin: 20px auto;
+      width: 1000px;
+      height: 120px;
+      background-color: #444;
+    }
+
+    #logo{
+      position: absolute; /* Permite ubicar una caja interna dentro de una principal por coordenadas. */
+      top: 30px;
+      left: 30px;
+      width: 200px;
+      height: 60px;
+      background-color: #ccc;
+    }
+
+    .redes{
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background-color: #ccc;
+      border-radius: 100%;
+    }
+
+    #icono1{
+      top: 42px;
+      right: 120px;
+    }
+
+    #icono2{
+      top: 42px;
+      right: 71px;
+    }
+
+    #icono3{
+      top: 42px;
+      right: 19px;
+    }
+
+    /*
+    Notas sobre MARGIN:
+    margin: top - right - bottom - left.
+    Si se pone solo dos valores entonces van a ser: vertical - horizontal.
+    Un solo valor: se aplica el mismo margen a todo lado.
+    */
+    nav{
+      position: relative;
+      margin: auto;
+      width: 1000px;
+      height: 48px;
+    }
+
+    .botones{
+      float: left;  /* Hace flotar los elementos. */
+      width: 196px;
+      height: 48px;
+      margin: 0px 2px;
+      background-color: #333;
+    }
+
+    #top{
+      position: relative;
+      margin: 20px auto;
+      width: 1000px;
+      height: 192px;
+    }
+
+    /* Acceso mediante ruta */
+    #top ul{
+      width: 1010px;
+      height: 192px;
+    }
+
+    /* Acceso mediante ruta */
+    #top ul li{
+      float: left;
+      width: 326px;
+      height: 192px;
+      background-color: black;
+      margin-right: 10px;
+    }
+
+    section{
+      position: relative;
+      margin: auto;
+      width: 1000px;
+      height: 453px;
+      background-color: #aaa;
+    }
+
+    /* Otra forma de llamar una etiqueta */
+    aside#izq{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 453px;
+      background-color: #333;
+    }
+
+    article{
+      position: absolute;
+      left: 200px;
+      top: 0;
+      width: 600px;
+      height: 453px;
+      background-color: #666;
+    }
+
+    /* Otra forma de llamar una etiqueta */
+    aside#der{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 453px;
+      background-color: #333;
+    }
+
+    footer{
+      position: relative;
+      margin: 20px auto;
+      width: 1000px;
+      height: 70px;
+      background-color: #888;
+    }
+  </style>
+</head>
+<body>
+  <!-- Inicio del cabezote -->
+  <header>
+    <div id="logo"></div>
+    <div id="icono1" class="redes"></div>
+    <div id="icono2" class="redes"></div>
+    <div id="icono3" class="redes"></div>
+  </header>
+  <!-- Cierre del cabezote -->
+
+  <!-- Inicio de la barra de navegación -->
+  <nav>
+    <ul>
+      <li class="botones"></li>
+      <li class="botones"></li>
+      <li class="botones"></li>
+      <li class="botones"></li>
+      <li class="botones"></li>
+    </ul>
+  </nav>
+  <!-- Cierre de la barra de navegación -->
+
+  <!-- Inicia parte del superior -->
+  <div id="top">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!-- Cierre de la parte superior -->
+  
+  <!-- Inicia la sección -->
+  <section>
+    <aside id="izq"></aside>
+    <article></article>
+    <aside id="der"></aside>
+  </section>
+  <!-- Cierre de la sección -->
+
+  <!-- Inicio del pie de página -->
+  <footer></footer>
+  <!-- Cierre del pie de página -->
+</body>
+</html>
